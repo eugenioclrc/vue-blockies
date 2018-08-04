@@ -1,13 +1,17 @@
 {
   "name": "vue-blockies",
+  "description": "## How to use: 1. Just use `npm install --save vue-blockies` 2. Use the components in your file directly.",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "dist/vue-blockies.common.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "serve": "vue-cli-service serve --open",
+    "build": "vue-cli-service build --target lib --name vue-blockies ./src/components/index.js",
+    "lint": "vue-cli-service lint",
+    "gh-pages": "vue-cli-service build"
   },
   "dependencies": {
+    "ethereum-blockies": "^0.1.1",
     "vue": "^2.5.16"
   },
   "devDependencies": {
