@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <h1> DEMO </h1>
+    <a href="https://eugenioclrc.github.io/vue-blockies/">go back</a>
     <h2>Default</h2>
     <p>no props, will generate random icons <a href="https://github.com/ethereum/blockies#readme">see defaults</a>
     <div v-for="i in 10" >
